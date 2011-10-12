@@ -6,7 +6,7 @@ gem "omniauth"
 gem 'sqlite3'
 gem "simple_form"
 gem "feedzirra"
-
+gem "pg"
 
 
 group :assets do
