@@ -9,5 +9,7 @@ class FeedEntry < ActiveRecord::Base
         )
       end
     end
-  end
+  end  
 end
+
+#feedurl = http://www.fandango.com/rss/top10boxoffice.rss
