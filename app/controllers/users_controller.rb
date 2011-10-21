@@ -9,6 +9,7 @@ class UsersController < ApplicationController
   	@thirdMovie  = FeedEntry.find(3).title
   	@fourthMovie  = FeedEntry.find(4).title
   	@movie_list = FeedEntry.all
+    @title = "Filmbet"
 
   end
 
