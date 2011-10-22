@@ -35,7 +35,20 @@ body {
 
 }
 
+#flash_notice{
+    
+    background :green;
+    border: 1px solid darken(green, 20%);
+    text-align :center;
+    color: white;
+
+}
+
 #lastweek {
+    font-size :10px;
+}
+
+#upcoming {
     font-size :10px;
 }
 

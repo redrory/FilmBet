@@ -3,6 +3,7 @@ Filmbet::Application.routes.draw do
   get "users/show"
 
   resources :movies
+  resources :users
 
    root :to => 'users#index'
    match "/auth/twitter/callback" => "sessions#create"

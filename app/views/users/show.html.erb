@@ -18,10 +18,10 @@
 				<%= simple_form_for @movie do |f| %>
 					<ol>
 						<li><%#= f.input :movie_one, :placeholder => @firstMovie, :label => false %> </li>
-						<li><%= f.input :movie_one, :placeholder => @fourthMovie, :collection => @movie_list, :label => false, :include_blank => false %> </li>
-						<li><%= f.input :movie_two, :placeholder => @fourthMovie, :collection => @movie_list, :label => false, :include_blank => false %> </li>
-						<li><%= f.input :movie_three, :placeholder => @fourthMovie, :collection => @movie_list, :label => false, :include_blank => false %> </li>
-						<li><%= f.input :movie_four, :placeholder => @fourthMovie, :collection => @movie_list, :label => false, :include_blank => false %> </li>
+						<li><%= f.input :movie_one, :collection => @new_movie_list, :label => false , :value_method =>:title ,:include_blank => false %> </li>
+						<li><%= f.input :movie_two, :collection => @new_movie_list, :label => false, :value_method =>:title ,:include_blank => false %> </li>
+						<li><%= f.input :movie_three, :collection => @new_movie_list, :label => false, :value_method =>:title ,:include_blank => false %> </li>
+						<li><%= f.input :movie_four,:collection => @new_movie_list, :label => false, :value_method =>:title ,:include_blank => false %> </li>
 
 						<%= f.submit :value => " GO " %>
 						</ol>		
@@ -32,16 +32,6 @@
 		  	<div id = "lastweek">
 				  		<%# @employees.each do |vacay| %>
 				  		<% @movie_list.each do |m| %>
-				  		<ul>
-				  			<li><%= m.title %></li>
-				  		</ul>
-			  		<% end %>
-			 	</div>
-
-			 	Upcoming	
-		  	<div id = "upcoming">
-				  		<%# @employees.each do |vacay| %>
-				  		<% @new_movie_list.each do |m| %>
 				  		<ul>
 				  			<li><%= m.title %></li>
 				  		</ul>

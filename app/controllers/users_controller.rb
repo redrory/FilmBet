@@ -11,9 +11,8 @@ class UsersController < ApplicationController
   	@thirdMovie  = FeedEntry.find(3).title
   	@fourthMovie  = FeedEntry.find(4).title
   	@movie_list = FeedEntry.limit(5)
-    @new_movie_list = NewFeedEntry.limit(5)
-    
-
+    @new_movie_list = NewFeedEntry.limit(5) + FeedEntry.limit(5)
   end
 
+ 
 end
