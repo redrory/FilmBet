@@ -1,6 +1,6 @@
 class User < ActiveRecord::Base
-	
- 	
+	attr_accessible :uid
+ 	has_many :movies
 
 	def self.create_with_omniauth(auth)
 		create! do |user|

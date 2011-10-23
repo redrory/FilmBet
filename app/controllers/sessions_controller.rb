@@ -3,6 +3,7 @@ class SessionsController < ApplicationController
   auth = request.env["omniauth.auth"]
   user = User.find_by_provider_and_uid(auth["provider"], auth["uid"]) || User.create_with_omniauth(auth)
   session[:user_id] = user.id
+  session[:user_uid] = user.uid
   redirect_to :action => "show", :controller => "users" , :notice => "Signed in!"
   end
 
