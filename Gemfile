@@ -7,6 +7,7 @@ gem 'sqlite3'
 gem "simple_form"
 gem "feedzirra"
 gem "pg"
+gem "whenever", "~> 0.7.0"
 
 
 group :assets do
