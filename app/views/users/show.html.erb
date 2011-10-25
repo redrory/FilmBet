@@ -1,11 +1,4 @@
-<body class="login">
-	<div id="wrapper">  
-		<div id="box">
 
-			<a href="/"><h1>Filmbet</h1></a>  
-				<h2>bet on which movies will make bank</h2>
-
-				<div class="rule"></div>
 
 				<% if current_user %>
 				 	<div id ="welcome"><%= current_user.name %>, You have 10 points. </div>
@@ -44,5 +37,4 @@
 		<span class="num"><%= link_to "Signout", signout_path %></span>
 		<% end %>
 
-	</div>
-</body>
+	

@@ -7,4 +7,7 @@ class MoviesController < ApplicationController
     
 		redirect_to :back, :notice => "Movies saved"
 	end
+
+
+
 end

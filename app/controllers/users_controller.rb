@@ -14,5 +14,10 @@ class UsersController < ApplicationController
     @new_movie_list = NewFeedEntry.limit(5) + FeedEntry.limit(5)
   end
 
+  def compare
+    @firstChoice  = FeedEntry.first.title
+    @firstSelection = Movie.find_by_user_id(1).movie_one 
+  end
+
  
 end

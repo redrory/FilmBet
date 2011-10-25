@@ -8,12 +8,20 @@
 </head>
 <body>
 
+<body class="login">
+	<div id="wrapper">  
+		<div id="box">
+			<a href="/"><h1>Filmbet</h1></a>  
+			<h2>bet on which movies will make bank</h2>
+			<div class="rule"></div>
+
 <% flash.each do |name, message| %>
 	<div id ="flash_<%= name %>">
 		<%= message %>
 	</div>
 <% end %>
 <%= yield %>
-
+		</div>
+	</div>	
 </body>
 </html>

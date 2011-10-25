@@ -1,9 +1,4 @@
-<body class="login">
-	<div id="wrapper">  
-		<div id="box">
-			<a href="/"><h1>Filmbet</h1></a>  
-			<h2>bet on which movies will make bank</h2>
-			<div class="rule"></div>
+
 			<% if current_user %>
 				Welcome, <%= current_user.name %>
 				<%= link_to "signout",  signout_path %>
@@ -19,6 +14,3 @@
 			<%= link_to "About", "google.com" %>
 			<br>design borrowed from sahil
 
-		</span>
-	</div>
-</body>
