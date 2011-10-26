@@ -10,7 +10,10 @@ class FeedEntry < ActiveRecord::Base
         )
       end
     end
-  end  
-#end
+  #end 
+  
+  def self.deleteTable
+    FeedEntry.destroy_all
+  end 
+end
 
-#feedurl = http://www.fandango.com/rss/top10boxoffice.rss
