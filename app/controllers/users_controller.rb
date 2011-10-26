@@ -1,5 +1,9 @@
 class UsersController < ApplicationController
   def index
+    if current_user
+      redirect_to :show
+    end
+
   end
 
   def show
@@ -7,9 +11,9 @@ class UsersController < ApplicationController
   	@movie = Movie.new
 
   	@firstMovie  = FeedEntry.first.title
-  	@secondMovie  = FeedEntry.find(2).title
-  	@thirdMovie  = FeedEntry.find(3).title
-  	@fourthMovie  = FeedEntry.find(4).title
+  	#@secondMovie  = FeedEntry.find(2).title
+  	#@thirdMovie  = FeedEntry.find(3).title
+  	#@fourthMovie  = FeedEntry.find(4).title
   	@movie_list = FeedEntry.limit(5)
     @new_movie_list = NewFeedEntry.limit(5) + FeedEntry.limit(5)
   end
