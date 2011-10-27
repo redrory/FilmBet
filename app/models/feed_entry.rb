@@ -12,12 +12,6 @@ class FeedEntry < ActiveRecord::Base
     end
   #end 
   
-<<<<<<< HEAD
- # def self.deleteTable
-  #  FeedEntry.destroy_all
-  #end 
-=======
-  
->>>>>>> cron-job
+
 end
 
