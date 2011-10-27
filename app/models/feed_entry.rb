@@ -12,8 +12,6 @@ class FeedEntry < ActiveRecord::Base
     end
   #end 
   
-  def self.deleteTable
-    FeedEntry.destroy_all
-  end 
+  
 end
 
