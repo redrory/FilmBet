@@ -20,7 +20,7 @@ class UsersController < ApplicationController
 
   def compare
     @firstChoice  = FeedEntry.first.title
-    @firstSelection = Movie.find_by_user_id(1).movie_one 
+    @firstSelection = Movie.find_by_user_id(session[:user_id]).movie_one 
   end
 
  
