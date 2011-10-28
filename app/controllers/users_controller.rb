@@ -19,8 +19,16 @@ class UsersController < ApplicationController
   end
 
   def compare
-    @firstChoice  = FeedEntry.first.title
+    @firstBox  = FeedEntry.first.title
+    @secondBox = FeedEntry.limit(1).offset(1).first.title
+    @thirdBox = FeedEntry.limit(1).offset(2).first.title
+    @fourthBox = FeedEntry.limit(1).offset(3).first.title
+
+
     @firstSelection = Movie.find_by_user_id(session[:user_id]).movie_one 
+    @secondSelection = Movie.find_by_user_id(session[:user_id]).movie_two
+    @thirdSelection = Movie.find_by_user_id(session[:user_id]).movie_three
+    @fourthSelection = Movie.find_by_user_id(session[:user_id]).movie_four 
   end
 
  
