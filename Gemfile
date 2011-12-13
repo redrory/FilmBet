@@ -26,4 +26,6 @@ group :test do
   gem 'turn', :require => false
 end
 
-
+group :production, :staging do
+  gem "pg"
+end
