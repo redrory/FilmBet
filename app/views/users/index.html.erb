@@ -1,0 +1,16 @@
+
+			<% if current_user %>
+				Welcome, <%= current_user.name %>
+				<%= link_to "signout",  signout_path %>
+			<% else %>
+				<%= link_to "signin with twitter", "/auth/twitter"%>
+				<%#= link_to "signin with twitter", "/show"%>
+			<% end %>
+			
+
+		</div>
+		<span class="num"> 
+			
+			<%= link_to "About", "google.com" %>
+			<br>design borrowed from sahil
+

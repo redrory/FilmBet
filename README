@@ -1,0 +1,16 @@
+Author: Rory Walker
+Email: redrory@gmail.com
+Date: Oct 22th 2011
+
+FilmBet.com
+My baby project, initally release with a god-awful design in 2009.
+Straight PHP and MYSQL.
+
+Back again 2011, with Rails and a design that I borrow from Sahil.
+
+Simple Box Office movie betting.
+
+Gems - Omniauth, FeedZirra
+Rails : 3.1
+
+

@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  user_id: 1
+  movie_one: MyString
+  movie_two: MyString
+  movie_three: MyString
+  movie_four: MyString
+  movie_five: MyString
+
+two:
+  user_id: 1
+  movie_one: MyString
+  movie_two: MyString
+  movie_three: MyString
+  movie_four: MyString
+  movie_five: MyString
