@@ -10,7 +10,7 @@ Back again 2011, with Rails and a design that I borrow from Sahil.
 
 Simple Box Office movie betting.
 
-Gems - Omniauth, FeedZirra
+Gems - Omniauth, FeedZirra, Whenever
 Rails : 3.1
 
 
