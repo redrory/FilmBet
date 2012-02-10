@@ -7,3 +7,11 @@ task :update_feed => :environment do
 
     puts "done."
 end
+
+task :update_new_movies => :environment do
+    puts "Updating new movie food..."
+    NewFeedEntry.deleteTable
+    NewFeedEntry.update_from_feed('http://www.fandango.com/rss/top10boxoffice.rss')
+
+    puts "done."
+end
