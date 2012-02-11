@@ -11,6 +11,7 @@ gem "feedzirra"
 gem "pg"
 gem "whenever", "~> 0.7.0"
 gem "annotate", "~> 2.4.1.beta1"
+gem	"awesome_print"
 
 
 group :assets do
