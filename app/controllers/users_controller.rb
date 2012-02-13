@@ -19,6 +19,9 @@ class UsersController < ApplicationController
   end
 
   def compare
+
+    @round_credits = 0
+    @error = ""
     @firstBox  = FeedEntry.first.title
     @secondBox = FeedEntry.limit(1).offset(1).first.title
     @thirdBox = FeedEntry.limit(1).offset(2).first.title
@@ -29,7 +32,31 @@ class UsersController < ApplicationController
     @secondSelection = Movie.find_by_user_id(session[:user_id]).movie_two
     @thirdSelection = Movie.find_by_user_id(session[:user_id]).movie_three
     @fourthSelection = Movie.find_by_user_id(session[:user_id]).movie_four 
-  end
 
- 
-end
+    if @firstBox == @firstSelection 
+      @round_credits = 25 + @round_credits
+      else
+        @error  = @error + "1st Error | "  
+    end
+
+    if @secondBox == @secondSelection
+      @round_credits = 25 + @round_credits
+      else
+        @error  = @error + "2nd Error | "   
+    end
+
+    if @thirdBox == @thirdSelection
+      @round_credits = 25 + @round_credits
+      else
+        @error  = @error + "3rd Error | "  
+    end
+
+    if @fourthBox == @fourthSelection
+      @round_credits = 25 + @round_credits
+      else
+        @error  = @error + "4th Error | "  
+    end
+    flash[:notice] = @error
+
+  end # end compare 
+end #end controller

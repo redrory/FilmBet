@@ -18,13 +18,5 @@
 
 </div>
 	
-	<% credit = 0;	%>
-<% if @firstSelection == @firstBox %>
-	"GALIS"
-	<% credit = 10;	%>
-<% else %>
-	"Battyhole"
-	<% credit = -10;	%>
-<% end %>
+	You're round credits: _<%= @round_credits%>_
 
-You have _<%= credit %>_ credits

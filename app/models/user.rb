@@ -7,7 +7,7 @@ class User < ActiveRecord::Base
 			user.provider = auth["provider"]
 			user.uid = auth["uid"]
 			user.name = auth["info"]["name"]
-			user.credits = 10 	
+			user.credits = 100 	
 		end
 	end
 end
