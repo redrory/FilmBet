@@ -6,7 +6,7 @@ class FeedEntry < ActiveRecord::Base
     feed.entries.each do |entry|
       #unless exists? :guid => entry.id
         create(
-          :title         => entry.title[0..-11],
+          :title         => entry.title[0..-10],
           :guid         => entry.id
         )
       end
