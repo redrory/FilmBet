@@ -9,9 +9,9 @@ task :update_feed => :environment do
 end
 
 task :update_new_movies => :environment do
-    puts "Updating new movie food..."
+    puts "rottentomatoes grab"
     NewFeedEntry.deleteTable
-    NewFeedEntry.update_from_feed('http://movies.msn.com/rss/topboxoffice')
+    NewFeedEntry.update_from_feed('http://www.rottentomatoes.com/syndication/rss/opening.xml')
 
     puts "done."
 end
