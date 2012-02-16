@@ -5,7 +5,7 @@ class NewFeedEntry < ActiveRecord::Base
     new_movie_feed.entries.each do |entry|
       #unless exists? :guid => entry.id
         create(
-          :title         => entry.title,
+          :title         => entry.title.strip[4..-1],
           :guid         => entry.id
         )
       end
